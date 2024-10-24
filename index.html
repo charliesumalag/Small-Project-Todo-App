@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container" id="default-dis">
+        <div class="title-container">
+            <h1>TODO App</h1>
+        </div>
+        <div class="add-new-task-container" id="add-new-task-title">
+            <p class="add-new-task">Add New Task</p>
+            <div class="">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+
+        </div>
+        <p class="title-text">Tasks</p>
+        <div class="main-task-container" id="main-task-container">
+        </div>
+    </div>
+    <div class="modal hide" id="modal">
+        <div class="modal-title">
+            <h2>Add New Task</h2>
+            <i class="fa-solid fa-x close"></i>
+        </div>
+        <form action="" autocomplete="off">
+            <div class="input-container">
+                <label for="">Task</label>
+                <input type="text" class="input" id="task_name" name="task-title" placeholder="Enter Tast Title">
+            </div>
+            <div class="input-container">
+                <label for="">Due Date</label>
+                <input type="date" id="date" class="input dates" name="date" placeholder="">
+            </div>
+            <div class="input-container">
+                <label for="">Description</label>
+                <textarea name="description" id="description" placeholder="Enter Your Task Description"></textarea>
+            </div>
+            <div class="modal-btn-container">
+                <button type="" class="close">Close</button>
+                <button type="submit" id="submit">Add</button>
+            </div>
+        </form>
+    </div>
+    <div class="message-container">
+        <p id="message" class="message hide">This is the message</p>
+    </div>
+    <div class="message-container-success">
+        <p id="message-success" class="message-success hide">This is the message</p>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+
+
+</html>

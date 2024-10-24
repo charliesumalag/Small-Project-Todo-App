@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: "JetBrains Mono", serif;
+    background-color: #070B15;
+    color: white;
+    padding: 3rem;
+}
+.container{
+    width: 40rem;
+    border: 1px solid white;
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    margin: 5rem auto;
+}
+.add-new-task-container{
+    border: 1px solid white;
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.add-new-task-container:hover{
+    background-color: white;
+    color: #111;
+}
+.task-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid red;
+}
+.title-text{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-top: 1rem;
+}
+.task-content{
+    border: 1px solid #999;
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    color: #999;
+}
+.icon-contianer{
+    /* text-align: center; */
+    align-self: center;
+
+}
+.icon-contianer i{
+    margin-inline: 0.2rem;
+    cursor: pointer;
+    /* color: white; */
+
+}
+
+.modal{
+    width: 40rem;
+    border: 1px solid white;
+    padding: 2rem;
+    margin: 0 auto;
+    border-radius: 0.6rem;
+    margin: 5rem auto;
+}
+.modal-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+
+}
+.modal-title i{
+    cursor: pointer;
+}
+.modal-title i:hover{
+    color: rgb(196, 77, 69);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    color: #999;
+}
+.input, textarea{
+    padding: 0.7rem;
+    background-color: transparent;
+    border: 1px solid #999;
+    border-radius: 0.6rem;
+    color: #999;
+    font-family: "JetBrains Mono", serif;
+}
+.input-container .dates{
+     background-color: transparent;
+    color: #999; /* Text color */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+}
+textarea{
+    min-height: 10rem;
+}
+.modal-btn-container{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 1rem;
+
+}
+.modal-btn-container button{
+    padding: 0.7rem 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 0.7rem;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    transition: all 0.3s ease;
+}
+.modal-btn-container button:hover{
+    background-color: white;
+    color: #111;
+}
+.hide{
+    display: none;
+}
+.message{
+    text-align: center;
+    color: red;
+}
+.message-success{
+    text-align: center;
+    color: white;
+}
+/* responsive */
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 100%;
+        margin: 0.5rem auto;
+        /* min-height: 5\0vh; */
+    }
+    .modal{
+        width: 100%;
+        margin: 0.5rem auto;
+    }
+}
